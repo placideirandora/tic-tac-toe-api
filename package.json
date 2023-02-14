@@ -1,0 +1,25 @@
+{
+  "name": "tic-tac-toe-api",
+  "version": "1.0.0",
+  "description": "An API server for the Tic Tac Toe game",
+  "main": "index.js",
+  "repository": "git@github.com:placideirandora/tic-tac-toe-api.git",
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "dev": "nodemon"
+  },
+  "keywords": [
+    "tictactoe"
+  ],
+  "author": "Placide IRANDORA",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
