@@ -3,10 +3,10 @@ import express, { Request, Response } from "express";
 const app = express();
 
 // Constants
-const BOARD_SIZE = 9;
-const EMPTY_SQUARE = " ";
-const PLAYER_X = "x";
-const PLAYER_O = "o";
+const BOARD_SIZE: number = 9;
+const EMPTY_SQUARE: string = " ";
+const PLAYER_X: string = "x";
+const PLAYER_O: string = "o";
 
 app.get("/", (req: Request, res: Response) => {
   const board = req.query.board as string | undefined;
@@ -130,4 +130,3 @@ const makeRandomMove = (boardArray: string[], player: string): void => {
   const randomIndex = Math.floor(Math.random() * emptySquares.length);
   boardArray[emptySquares[randomIndex]] = PLAYER_O;
 };
-
